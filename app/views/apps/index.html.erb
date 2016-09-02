@@ -1,0 +1,9 @@
+<% @apps.each do |app| %>
+
+  <div class="app-thumb">
+    <%= link_to image_tag("#{app.thumb}"), app.path %>
+    <h2><%= app.title %></h2>
+    <p><%= app.description %></p>
+  </div>
+  
+<% end %>

@@ -1,0 +1,32 @@
+@import 'variables/colors';
+
+#canvas-container {
+  height: auto;
+  width: 80px;
+}
+
+.color {
+  height: 30px;
+  width: 30px;
+  border: 1px solid black;
+  margin: auto;
+}
+
+.color-container {
+  height: auto;
+  width: 400px;
+  display: flex;
+  margin: 10px;
+}
+
+.canvas-grid {
+  height: 20px;
+  width: 20px;
+  float: left;
+  outline: 1px solid black;
+  background: white;
+}
+
+.inactive-canvas-grid {
+  outline: none;
+}

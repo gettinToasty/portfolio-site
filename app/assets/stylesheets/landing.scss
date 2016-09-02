@@ -1,0 +1,87 @@
+// Place all the styles related to the landing controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables/colors";
+
+html {
+  margin: 0;
+	padding: 0;
+	height: 100%;
+  width: 100%;
+}
+
+body {
+  margin: 0;
+	padding: 0;
+	height: 100%;
+  width: 100%;
+}
+
+div {
+  margin: 0;
+	padding: 0;
+	height: 100%;
+  width: 100%;
+}
+
+a {
+  font-family: 'Montserrat', sans-serif;
+  color: $main-purple;
+  text-decoration: none;
+  &:hover {
+    border-bottom: dotted $main-purple 2px;
+  }
+}
+
+input {
+  padding: 5px;
+  border: solid $main-purple 2px;
+  &:focus {
+    outline: none;
+  }
+}
+
+button {
+  background-color: $main-purple;
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  padding: 5px;
+  margin: 10px;
+  &:focus {
+    outline: none;
+  }
+  &:hover {
+    outline: solid $main-purple 2px;
+    outline-offset: -2px;
+    background-color: white;
+    color: $main-purple;
+    transition: all 0.1s linear;
+  }
+  &:active {
+    margin-top: 11px;
+    margin-bottom: 9px;
+  }
+}
+
+.content {
+  height: 100%;
+  width: 60%;
+  float: right;
+  background-color: white;
+}
+
+#main-logo {
+  svg {
+    fill: $main-purple;
+    position: relative;
+    top: 30%;
+    left: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

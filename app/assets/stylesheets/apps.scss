@@ -1,0 +1,20 @@
+// Place all the styles related to the apps controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import "variables/colors";
+
+.app-title {
+  color: $main-purple;
+}
+
+.app-container {
+  padding: 20px;
+}
+
+.app-thumb {
+  background-color: $main-purple;
+  overflow: hidden;
+  height: 200px;
+  width: 80%;
+}

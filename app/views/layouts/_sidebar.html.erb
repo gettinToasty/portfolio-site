@@ -1,0 +1,27 @@
+<div id="sidebar" data-turbolinks-permanent>
+  <ul>
+    <li>
+      <div class='tab-title'>
+        <h2><%= link_to 'apps', apps_path, id: "main-tab" %></h2>
+      </div>
+    </li>
+    <li>
+      <div class= 'tab-title'>
+        <h2><%= link_to 'design', designs_path, id: "design-tab" %></h2>
+      </div>
+      <div id='design-description'>
+        <p>here is some text</p>
+      </div>
+    </li>
+    <li>
+      <div class='tab-title'>
+        <h2><%= link_to 'fashion', "/", id: "fashion-tab" %></h2>
+      </div>
+    </li>
+    <li>
+      <div class='tab-title'>
+        <h2><%= link_to 'contact', "/", id: "contact-tab" %></h2>
+      </div>
+    </li>
+  </ul>
+</div>

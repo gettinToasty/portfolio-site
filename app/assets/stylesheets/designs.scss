@@ -1,0 +1,59 @@
+// Place all the styles related to the designs controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+@import 'variables/colors';
+
+#design-logo {
+  height: auto;
+  width: auto;
+  margin: 20px;
+  svg {
+    fill: $design-green;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.thumb {
+  margin: 20px;
+  height: 200px;
+  width: 200px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background-color: $design-green;
+  h2 {
+    position: absolute;
+    z-index: 100;
+    color: white;
+    left: 10px;
+    top: 0;
+    right: 10px;
+    opacity: 0;
+  }
+  p {
+    @extend h2;
+    top: 40px;
+  }
+  img {
+    width: 300%;
+    position: relative;
+    left: -50%;
+    top: -40%;
+    -webkit-transition: all 0.2s linear;
+  }
+  &:hover {
+    img {
+      opacity: 0.5;
+      -webkit-filter: blur(3px);
+    }
+    h2 {
+      opacity: 1;
+    }
+    p {
+      opacity: 1;
+    }
+  }
+}

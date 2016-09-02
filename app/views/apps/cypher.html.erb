@@ -1,0 +1,29 @@
+<form>
+  <p>Select your library:</p> <br />
+  <%= radio_button_tag(:lib, 'MORSE') %>
+  <%= label_tag(:lib, "Morse Code") %>
+  <%= radio_button_tag(:lib, 'REVERSAL') %>
+  <%= label_tag(:lib, "Reversal Cypher") %>
+  <%= radio_button_tag(:lib, 'NUMERICAL') %>
+  <%= label_tag(:lib, "Numerical Substitution") %>
+  <%= radio_button_tag(:lib, 'SEEDED') %>
+  <%= label_tag(:lib, "Generated Library") %>
+  <br />
+
+  <% if @lib == 'SEEDED' %>
+    <%= label_tag(:seed, "Enter seed if decoding:") %>
+    <%= text_field_tag(:seed) %>
+    <br />
+  <% end %>
+
+  <%= text_area_tag(:cypher_input, "Place your text here") %>
+  <br />
+
+  <button id="encode">Encode</button>
+  <button id="decode">Decode</button><br />
+</form>
+<br />
+
+<p>Your seed is: <%= @seed %></p>
+<br />
+<p><%= @result %></p>
