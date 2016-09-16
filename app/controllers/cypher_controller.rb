@@ -2,21 +2,21 @@ require 'cypher'
 
 class CypherController < ApplicationController
 
-  def index
-    @lib = params[:lib]
-    @input = params[:cypher_input]
-  end
-
   def encode
     cypher = Cypher.new(@lib)
     @seed = cypher.seed
-    @encoded = cypher.encode(@input)
+    cypher.encode(@input)
   end
 
   def decode
     cypher = Cypher.new(@lib)
-    @seed = params[:seed]
-    @decoded = cypher.decode(@input)
+    @seed = params[:seed].to_i
+    cypher.decode(@input)
+  end
+
+  def index
+    @lib = params[:lib]
+    @input = params[:cypher_input]
   end
 
 end
