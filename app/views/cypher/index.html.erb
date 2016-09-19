@@ -1,4 +1,4 @@
-<form>
+<%= form_tag(:action => 'common_content') do %>
   <p>Select your library:</p> <br />
   <%= radio_button_tag(:lib, 'MORSE') %>
   <%= label_tag(:lib, "Morse Code") %>
@@ -18,12 +18,14 @@
 
   <%= text_area_tag(:cypher_input, "Place your text here") %>
   <br />
+  <%= submit_tag("Submit") %>
 
-  <button id="encode">Encode</button>
-  <button id="decode">Decode</button><br />
-</form>
+<% end %>
+
+<%= link_to "Encode", 'cypher/encode', id: 'encode', remote: true %>
+<%= link_to "Decode", 'cypher/decode', id: 'decode', remote: true %>
 <br />
 
-<p>Your seed is: <%= @seed %></p>
-<br />
-<p><%= @result %></p>
+<div id="cypher-container">
+  <p id="cypher-result"></p>
+</div>

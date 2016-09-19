@@ -11,5 +11,11 @@ Rails.application.routes.draw do
 
   get '/apps/cypher', to: 'cypher#index'
 
+  get '/apps/cypher/encode', to: 'cypher#encode'
+
+  get '/apps/cypher/decode', to: 'cypher#decode'
+
+  post '/apps/cypher/common_content', to: 'cypher#common_content'
+
 
 end
