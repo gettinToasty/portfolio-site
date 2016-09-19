@@ -3,6 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 @import 'variables/colors';
+@import 'mixins/mixins';
 
 #design-logo {
   height: auto;
@@ -24,36 +25,10 @@
   overflow: hidden;
   position: relative;
   background-color: $design-green;
-  h2 {
-    position: absolute;
-    z-index: 100;
-    color: white;
-    left: 10px;
-    top: 0;
-    right: 10px;
-    opacity: 0;
-  }
-  p {
-    @extend h2;
-    top: 40px;
-  }
   img {
     width: 300%;
-    position: relative;
     left: -50%;
     top: -40%;
-    -webkit-transition: all 0.2s linear;
   }
-  &:hover {
-    img {
-      opacity: 0.5;
-      -webkit-filter: blur(3px);
-    }
-    h2 {
-      opacity: 1;
-    }
-    p {
-      opacity: 1;
-    }
-  }
+  @include index-divs;
 }
