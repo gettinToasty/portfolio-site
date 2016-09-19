@@ -1,9 +1,11 @@
 <% @projects.each do |project| %>
 
-  <div class= "thumb">
-    <%= link_to image_tag("#{project.thumb}"), design_path(project) %>
-    <h2><%= project.title %></h2>
-    <p><%= project.description %></p>
-  </div>
+  <%= link_to design_path(project) do %>
+    <div class= "thumb">
+      <%= image_tag("#{project.thumb}") %>
+      <h2><%= project.title %></h2>
+      <p><%= project.description %></p>
+    </div>
+  <% end %>
 
 <% end %>

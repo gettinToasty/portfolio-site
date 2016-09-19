@@ -16,5 +16,38 @@
   background-color: $main-purple;
   overflow: hidden;
   height: 200px;
-  width: 80%;
+  margin: 20px;
+  width: 90%;
+  position: relative;
+  h2 {
+    position: absolute;
+    color: white;
+    z-index: 100;
+    left: 10px;
+    top: 0;
+    right: 10px;
+    opacity: 0;
+  }
+  p {
+    @extend h2;
+    top: 40px;
+  }
+  img {
+    float: right;
+    position: relative;
+    height: 200px;
+    -webkit-transition: all 0.2s linear;
+  }
+  &:hover {
+    img {
+      opacity: 0.5;
+      -webkit-filter: blur(3px);
+    }
+    h2 {
+      opacity: 1;
+    }
+    p {
+      opacity: 1;
+    }
+  }
 }

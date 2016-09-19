@@ -6,10 +6,10 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-designs = Design.create([{title: 'fatigue', description: 'here\'s my clothing brand', thumb: '/assets/fatigue_thumb.jpg', longform: ''},
-  {title: 'adroit', description: 'here is some stuff i did for my friends', thumb: '/assets/adroit_thumb.png', longform: '' },
-  {title: 'toasty', description: 'the toasty brand identity package', thumb: '/assets/toasty_thumb.png', longform: ''},
-  {title: 'misc', description: 'various other stuff i did', thumb: '/assets/misc_thumb.jpg', longform: ''}])
+designs = Design.create([{title: 'fatigue', description: 'here\'s my clothing brand', thumb: '/assets/fatigue_thumb.jpg'},
+  {title: 'adroit', description: 'here is some stuff i did for my friends', thumb: '/assets/adroit_thumb.png'},
+  {title: 'toasty', description: 'the toasty brand identity package', thumb: '/assets/toasty_thumb.png'},
+  {title: 'misc', description: 'various other stuff i did', thumb: '/assets/misc_thumb.jpg',}])
 
 apps = App.create([
   {title: 'pixel painter', thumb: '/assets/pixel_painter_thumb.png', description: 'an app which lets you make up to 60x60 pixel art', path: 'apps/sketch'},

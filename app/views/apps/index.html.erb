@@ -1,10 +1,12 @@
 <% @apps.each do |app| %>
 
-  <div class="app-thumb">
-    <%= link_to image_tag("#{app.thumb}"), app.path %>
-    <h2><%= app.title %></h2>
-    <p><%= app.description %></p>
-  </div>
+  <%= link_to app.path do %>
+    <div class="app-thumb">
+      <%= image_tag("#{app.thumb}") %>
+      <h2><%= app.title %></h2>
+      <p><%= app.description %></p>
+    </div>
+  <% end %>
 
 <% end %>
 
