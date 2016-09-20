@@ -14,7 +14,7 @@ designs = Design.create([{title: 'fatigue', description: 'here\'s my clothing br
 apps = App.create([
   {title: 'pixel painter', thumb: '/assets/pixel_painter_thumb.png', description: 'an app which lets you make up to 60x60 pixel art', path: 'apps/sketch'},
   {title: 'cypher', thumb: '/assets/cypher_thumb.png', description: 'a simple encoder/decoder which can access several encoding libraries or generate a seeded library', path: 'apps/cypher'},
-  {title: 'TBD', thumb: 'toasty\'s latest killer app is still under production', description: '', path: ''}])
+  {title: 'tbd', thumb: '/assets/tbd_thumb.png', description: 'toasty\'s latest killer app is still under production', path: ''}])
 
 shots = Shot.create([
   {caption: "", date: "2016", img: "/assets/shot1.jpg"},

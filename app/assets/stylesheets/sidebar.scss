@@ -31,7 +31,6 @@
   }
 
   .tab-description {
-    -webkit-transition: all 0.2s linear;
     position: relative;
     text-align: right;
     color: white;
@@ -41,6 +40,7 @@
     width: 100%;
     padding: 20px;
     margin: 0px;
+    overflow: hidden;
   }
 }
 

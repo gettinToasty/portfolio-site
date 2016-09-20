@@ -5,21 +5,21 @@ $(document).on "turbolinks:load", ->
 
   $("#design-tab").click ->
     $("#sidebar").css background:"#46AB8F"
-    adjustTop
+    adjustTop()
     $("#apps-description").slideUp(200)
     $("#fashion-description").slideUp(200)
     $("#design-description").slideDown(200)
 
   $("#fashion-tab").click ->
     $("#sidebar").css background:"#000000"
-    adjustTop
+    adjustTop()
     $("#apps-description").slideUp(200)
     $("#design-description").slideUp(200)
     $("#fashion-description").slideDown(200)
 
   $("#main-tab").click ->
     $("#sidebar").css background:"#AD5EB8"
-    adjustTop
+    adjustTop()
     $("#fashion-description").slideUp(200)
     $("#design-description").slideUp(200)
     $("#apps-description").slideDown(200)
