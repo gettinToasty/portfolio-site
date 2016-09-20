@@ -9,10 +9,11 @@
   ul {
     position: relative;
     list-style-type: none;
-    top: 25%;
+    top: 20%;
     li {
       margin-top: 3em;
       margin-right: 30px;
+      margin-left: 0px;
     }
   }
   .tab-title {
@@ -28,10 +29,18 @@
       }
     }
   }
-  #design-description {
+
+  .tab-description {
+    -webkit-transition: all 0.2s linear;
+    position: relative;
     text-align: right;
     color: white;
     display: none;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 40px 0 0 40px;
+    width: 100%;
+    padding: 20px;
+    margin: 0px;
   }
 }
 
