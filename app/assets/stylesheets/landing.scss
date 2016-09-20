@@ -35,7 +35,8 @@ a {
 }
 
 input {
-  padding: 5px;
+  padding: 3px;
+  font-size: 16px;
   border: solid $main-purple 2px;
   &:focus {
     outline: none;
