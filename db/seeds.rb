@@ -15,3 +15,11 @@ apps = App.create([
   {title: 'pixel painter', thumb: '/assets/pixel_painter_thumb.png', description: 'an app which lets you make up to 60x60 pixel art', path: 'apps/sketch'},
   {title: 'cypher', thumb: '/assets/cypher_thumb.png', description: 'a simple encoder/decoder which can access several encoding libraries or generate a seeded library', path: 'apps/cypher'},
   {title: 'TBD', thumb: 'toasty\'s latest killer app is still under production', description: '', path: ''}])
+
+shots = Shot.create([
+  {caption: "", date: "2016", img: "/assets/shot1.jpg"},
+  {caption: "", date: "2016", img: "/assets/shot2.jpg"},
+  {caption: "", date: "2016", img: "/assets/shot3.jpg"},
+  {caption: "", date: "2016", img: "/assets/shot4.jpg"},
+  {caption: "", date: "2016", img: "/assets/shot5.jpg"}
+  ])
