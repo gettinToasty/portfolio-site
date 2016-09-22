@@ -1,7 +1,7 @@
 $(document).on "turbolinks:load", ->
 
-  topMargin = "10%"
-  adjustTop = () -> $("ul").css {top:topMargin}, 200
+  topMargin = "8%"
+  adjustTop = () -> $("ul").stop().animate {top:topMargin}, 200
 
   $("#design-tab").click ->
     $("#sidebar").css background:"#46AB8F"
@@ -26,7 +26,7 @@ $(document).on "turbolinks:load", ->
 
   $("#contact-tab").click ->
     $("#sidebar").css background:"#AD5EB8"
-    $("ul").animate {top:"20%"}, 200
+    $("ul").stop().animate {top:"15%"}, 200
     $("#apps-description").slideUp(200)
     $("#fashion-description").slideUp(200)
     $("#design-description").slideUp(200)
