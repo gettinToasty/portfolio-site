@@ -2,7 +2,7 @@ require 'cypher'
 
 class CypherController < ApplicationController
 
-  before_action :common_content, :only => [:encode, :decode]
+  before_action :index, :only => [:encode, :decode]
 
   def encode
     cypher = Cypher.new(@lib)
@@ -16,9 +16,6 @@ class CypherController < ApplicationController
   end
 
   def index
-  end
-
-  def common_content
     @lib = params[:lib]
     @input = params[:cypher_input]
     @seed = params[:seed].to_i

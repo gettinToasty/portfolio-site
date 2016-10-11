@@ -24,7 +24,7 @@ $(document).on "turbolinks:load", ->
     $("#design-description").slideUp(200)
     $("#apps-description").slideDown(200)
 
-  $("#contact-tab").click ->
+  $("#about-tab").click ->
     $("#sidebar").css background:"#AD5EB8"
     $("ul").stop().animate {top:"15%"}, 200
     $("#apps-description").slideUp(200)
