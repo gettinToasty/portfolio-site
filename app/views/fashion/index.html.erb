@@ -1,3 +1,5 @@
 <% @shots.each do |shot| %>
-  <%= image_tag("#{shot.img}", class:"shot-img") %>
+  <div class="shot-wrapper">
+    <%= image_tag("#{shot.img}") %>
+  </div>
 <% end %>

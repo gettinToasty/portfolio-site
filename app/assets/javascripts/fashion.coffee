@@ -3,9 +3,10 @@
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
 $(document).on "turbolinks:load", ->
-  $(".shot-img").click ->
+  $(".shot-wrapper").click ->
     $(this).addClass ".shot-img-active"
     $("#gallery-background").fadeIn()
+
   $("#gallery-background").click ->
     $(".shot-img").removeClass ".shot-img-active"
     $(this).fadeOut()
