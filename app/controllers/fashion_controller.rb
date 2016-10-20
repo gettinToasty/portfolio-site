@@ -1,7 +1,7 @@
 class FashionController < ApplicationController
 
   def index
-    @shots = Shots.all
+    @shots = Shot.all
   end
 
 end
