@@ -4,8 +4,10 @@ class CreateApps < ActiveRecord::Migration[5.0]
 
       t.string :title
       t.string :thumb
+      t.string :language
       t.string :description
       t.string :path
+      t.string :github
       t.timestamps
     end
   end

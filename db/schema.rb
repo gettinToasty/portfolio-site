@@ -15,9 +15,10 @@ ActiveRecord::Schema.define(version: 20160920050049) do
   create_table "apps", force: :cascade do |t|
     t.string   "title"
     t.string   "thumb"
+    t.string   "language"
     t.string   "description"
-    t.string   "longform"
     t.string   "path"
+    t.string   "github"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
@@ -26,6 +27,7 @@ ActiveRecord::Schema.define(version: 20160920050049) do
     t.string   "title"
     t.string   "thumb"
     t.string   "description"
+    t.string   "longform"
     t.datetime "created_at",  null: false
     t.datetime "updated_at",  null: false
   end
