@@ -4,7 +4,8 @@
 
 $(document).on "turbolinks:load", ->
   $(".shot-img").click ->
-    $(this).css
-      position: "absolute",
-      transform: "scale(1)",
-      margin: "auto"
+    $(this).addClass ".shot-img-active"
+    $("#gallery-background").fadeIn()
+  $("#gallery-background").click ->
+    $(".shot-img").removeClass ".shot-img-active"
+    $(this).fadeOut()
