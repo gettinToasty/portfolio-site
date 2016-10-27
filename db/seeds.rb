@@ -12,8 +12,8 @@ designs = Design.create([{title: 'fatigue', description: 'here\'s my clothing br
   {title: 'misc', description: 'various other stuff i did', thumb: '/assets/misc_thumb.jpg',}])
 
 apps = App.create([
-  {title: 'pixel painter', thumb: '/assets/pixel_painter_thumb.png', language: 'jQuery', description: 'an app which lets you make up to 60x60 pixel art', path: 'apps/sketch', github: ''},
-  {title: 'cipher', thumb: '/assets/cypher_thumb.png', language: 'Ruby', description: 'a simple encoder/decoder which can access several encoding libraries or generate a seeded library', path: 'apps/cypher', github: ''},
+  {title: 'pixel painter', thumb: '/assets/pixel_painter_thumb.png', language: 'jQuery', description: 'an app which lets you make up to 60x60 pixel art', path: 'apps/sketch', github: 'https://github.com/gettinToasty/sketch'},
+  {title: 'cipher', thumb: '/assets/cypher_thumb.png', language: 'Ruby', description: 'a simple encoder/decoder which can access several encoding libraries or generate a seeded library', path: 'apps/cypher', github: 'https://github.com/gettinToasty/cypher'},
   {title: 'tbd', thumb: '/assets/tbd_thumb.png', language: 'n/a', description: 'toasty\'s latest killer app is still under production', path: '', github: ''}])
 
 shots = Shot.create([
