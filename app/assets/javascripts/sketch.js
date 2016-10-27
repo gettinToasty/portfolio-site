@@ -18,7 +18,7 @@ $(document).on('turbolinks:load', function(){
 
 // generates the canvas
   $('#generate-canvas').click(function() {
-    var gridSize = $('#size').val();
+    var gridSize = $('#size').val().match(/\d+/);
     if(gridSize > 60) { gridSize = 60 };
     if(gridSize < 1) { gridSize = 1 };
     $('#canvas-container').empty();
