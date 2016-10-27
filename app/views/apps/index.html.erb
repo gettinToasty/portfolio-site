@@ -4,8 +4,12 @@
     <div class="app-thumb">
       <%= image_tag("#{app.thumb}") %>
       <h2><%= app.title %></h2>
-      <p><%= app.description %></p>
+      <p><%= app.language %></p>
     </div>
   <% end %>
+  <div class="app-description">
+    <p><%= app.description %> </p>
+    <%= link_to "Github", app.github %>
+  </div>
 
 <% end %>

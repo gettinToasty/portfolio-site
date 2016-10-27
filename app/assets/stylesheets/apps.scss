@@ -16,7 +16,7 @@
 .app-thumb {
   background-color: $main-purple;
   overflow: hidden;
-  height: 200px;
+  height: 100px;
   margin: 20px;
   width: 90%;
   position: relative;
@@ -24,5 +24,24 @@
     float: right;
     height: 200px;
   }
-  @include index-divs;
+  h2 {
+    position: absolute;
+    color: white;
+    z-index: 100;
+    left: 10px;
+    top: 0;
+    right: 10px;
+    opacity: 1;
+  }
+  p {
+    @extend h2;
+    top: 40px;
+  }
+}
+
+.app-description {
+  margin-top: 5px;
+  margin-left: 40px;
+  height: auto;
+  width: 90%;
 }
