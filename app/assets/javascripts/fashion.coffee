@@ -4,9 +4,12 @@
 
 $(document).on "turbolinks:load", ->
   $(".shot-wrapper").click ->
-    $(this).addClass ".shot-img-active"
+    img = $("img", this).attr("src")
+    $("#shot-img-active").append("<img src=#{img} />")
+    $("#shot-img.active").fadeIn()
     $("#gallery-background").fadeIn()
 
   $("#gallery-background").click ->
-    $(".shot-img").removeClass ".shot-img-active"
+    $("#shot-img-active").fadeOut()
+    $("#shot-img-active").empty()
     $(this).fadeOut()

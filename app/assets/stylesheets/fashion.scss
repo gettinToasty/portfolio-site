@@ -17,13 +17,16 @@
   }
 }
 
-.shot-img-active {
+#shot-img-active {
+  display: none;
   transition: all 0.5s linear;
-  position: relative;
+  position: absolute;
   margin: auto;
+  width: 1000;
+  height: 1000;
+  background-color: white;
   img {
-    transform: scale(1.5);
-    -webkit-transform: scale(1.5);
+    width: 100%;
   }
   border: solid 10px white;
 }
