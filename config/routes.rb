@@ -17,4 +17,6 @@ Rails.application.routes.draw do
 
   get '/fashion', to: 'fashion#index'
 
+  get '/about', to: 'landing#about'
+
 end
