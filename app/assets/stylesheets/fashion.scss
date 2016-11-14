@@ -22,12 +22,14 @@
   transition: all 0.5s linear;
   opacity: 1;
   position: fixed;
-  margin: auto;
+  left: 0;
+  right: 0;
+  margin: 2% 10% auto 10%;
   width: auto;
   height: 90%;
   background-color: white;
   img {
-    display: relative;
+    display: block;
     height: 100%;
     margin: auto;
   }
