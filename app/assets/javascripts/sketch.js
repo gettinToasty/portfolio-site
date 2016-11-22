@@ -7,7 +7,7 @@ $(document).on('turbolinks:load', function(){
 // sets color variables for all the colors
   var color = 'black';
   $('.color').click(function(){
-    color = $(this).attr("id")
+    color = $(this).attr("id");
   });
 
 //highlights selected color
@@ -19,13 +19,13 @@ $(document).on('turbolinks:load', function(){
 // generates the canvas
   $('#generate-canvas').click(function() {
     var gridSize = $('#size').val().match(/\d+/);
-    if(gridSize > 60) { gridSize = 60 };
-    if(gridSize < 1) { gridSize = 1 };
+    if(gridSize > 60) { gridSize = 60; }
+    if(gridSize < 1) { gridSize = 1; }
     $('#canvas-container').empty();
     $('#canvas-container').css('width',gridSize*20);
-    for(i = 0; i<gridSize*gridSize; i++){
+    for(var i = 0; i<gridSize*gridSize; i++){
       $('#canvas-container').append("<div class= 'canvas-grid'></div>");
-    };
+    }
 
 // actual paint function
     var dragging = false;
@@ -33,7 +33,7 @@ $(document).on('turbolinks:load', function(){
       dragging = true;
     });
     $('.canvas-grid').mousemove(function() {
-      if(dragging===true) { $(this).css('background', color) };
+      if(dragging===true) { $(this).css('background', color); }
     });
     $('.canvas-grid').mouseup(function() {
       dragging = false;
