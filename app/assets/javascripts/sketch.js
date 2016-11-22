@@ -31,9 +31,9 @@ $(document).on('turbolinks:load', function(){
     var dragging = false;
     $('.canvas-grid').mousedown(function(){
       dragging = true;
-      $('.canvas-grid').mousemove(function() {
-        if(dragging===true) { $(this).css('background', color) };
-      });
+    });
+    $('.canvas-grid').mousemove(function() {
+      if(dragging===true) { $(this).css('background', color) };
     });
     $('.canvas-grid').mouseup(function() {
       dragging = false;
